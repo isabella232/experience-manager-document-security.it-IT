@@ -1,18 +1,13 @@
 ---
 cloud: experience-cloud
-solution-title: Informazioni e supporto
-solution-hub-url: https://helpx.adobe.com/it/support/experience-manager.html
-getting-started-title: Guida introduttiva
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=it
-tutorials-title: Esercitazioni
-tutorials-url: https://experienceleague.adobe.com/?tag=Tutorial&lang=it#recommended/solutions/experience-manager
+feature-set: Experience Manager Forms
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-document-security.it-IT
 index: true
-translation-type: ht
-source-git-commit: 29c078e0820b42b53eb65061893e45c8cb63e549
-workflow-type: ht
-source-wordcount: '150'
+translation-type: tm+mt
+source-git-commit: f441620b5463ffa0c038f76e1b92c4e3a56d23b2
+workflow-type: tm+mt
+source-wordcount: '130'
 ht-degree: 100%
 
 ---
