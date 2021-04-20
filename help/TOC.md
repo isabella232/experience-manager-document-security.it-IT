@@ -2,13 +2,13 @@
 cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager
-type: Documentazione
+type: Documentation
 audience: end-user
 user-guide-title: Guida di Adobe Experience Manager Document Security
 breadcrumb-title: Guida di Document Security
 user-guide-description: L’estensione Document Security for Microsoft® Office garantisce che solo le persone autorizzate possano utilizzare file Word, Excel e PowerPoint con contenuti protetti dai diritti di proprietà intellettuale dell’autore.
 feature: Document Security
-role: Professionista
+role: Business Practitioner
 translation-type: ht
 source-git-commit: 7be2b17e7685a391dcccde2cc008802b5773cadf
 workflow-type: ht
