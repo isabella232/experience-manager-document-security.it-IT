@@ -8,11 +8,10 @@ user-guide-title: Guida di Adobe Experience Manager Document Security
 breadcrumb-title: Guida di Document Security
 user-guide-description: L’estensione Document Security for Microsoft® Office garantisce che solo le persone autorizzate possano utilizzare file Word, Excel e PowerPoint con contenuti protetti dai diritti di proprietà intellettuale dell’autore.
 feature: Document Security
-role: Business Practitioner
-translation-type: ht
-source-git-commit: 7be2b17e7685a391dcccde2cc008802b5773cadf
-workflow-type: ht
-source-wordcount: '102'
+role: User
+source-git-commit: 30aa9eea28832fba634fb7710c0cc0666a9f3b7e
+workflow-type: tm+mt
+source-wordcount: '99'
 ht-degree: 100%
 
 ---
@@ -20,7 +19,7 @@ ht-degree: 100%
 
 # Guida di Adobe Experience Manager Document Security {#using}
 
-+ [Introduzione ad AEM Document Security Extension for Microsoft Office](document-security-extension-microsoft-office.md)
++ [Introduzione a AEM Document Security Extension for Microsoft Office](document-security-extension-microsoft-office.md)
 + [AEM Document Security for Microsoft Office - Note sulla versione](document-security-extension-release-notes.md)
 + [Download di Adobe Experience Manager Document Security/LiveCycle Rights Management Extension for Microsoft Office](download-installer.md)
 + [Installazione e configurazione di AEM Document Security Extension for Microsoft Office](installing-configuring-aemdsext.md)
