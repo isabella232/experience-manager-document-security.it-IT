@@ -10,7 +10,7 @@ user-guide-description: L’estensione Document Security for Microsoft® Office 
 feature: Document Security
 role: User
 source-git-commit: 30aa9eea28832fba634fb7710c0cc0666a9f3b7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '99'
 ht-degree: 100%
 
