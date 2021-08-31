@@ -6,15 +6,14 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-translation-type: ht
-source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
-source-wordcount: '2796'
-ht-degree: 100%
+source-git-commit: 13c487b13acb0d65f02301c881bfade512428bcd
+workflow-type: tm+mt
+source-wordcount: '2764'
+ht-degree: 99%
 
 ---
 
-# Installazione e configurazione di AEM Document Security Extension for Microsoft Office {#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
+# Installazione e configurazione di AEM Document Security Extension for Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 Questo documento illustra come installare e configurare Adobe Experience Manager Document Security Extension for Microsoft Office.
 
@@ -41,7 +40,7 @@ Prima di installare Document Security Extension for Microsoft Office, assicurati
 >
 >È supportata l’installazione di una versione a 32 bit dell’estensione Document Security su un sistema operativo a 64 bit, ma non il contrario. In altre parole, non è possibile installare la versione a 64 bit dell’estensione Document Security per Microsoft Office in un sistema operativo a 32 bit.
 
-### Disattivare McAfee VirusScan {#disable-mcafee-virusscan}
+### Disattivare McAfee VirusScan  {#disable-mcafee-virusscan}
 
 Per garantire un avvio ottimale delle applicazioni Office nei computer in cui sono installati Document Security Extension e McAfee VirusScan con scansione all’accesso abilitata, disabilita l’opzione di protezione da overflow del buffer nella console di McAfee VirusScan.
 
@@ -66,7 +65,7 @@ Verifica di disporre delle seguenti configurazioni minime in cui installare Docu
 * 2 GB di RAM
 * 100 MB di spazio disponibile su disco rigido
 
-### Sicurezza dei documenti {#document-security}
+### Document Security {#document-security}
 
 Prima di utilizzare Document Security Extension, accertati di essere in grado di stabilire una connessione con Adobe LiveCycle Rights Management ES2 o versione successiva o con il componente aggiuntivo Document Security per AEM Forms 6.0 o versione successiva.
 
@@ -104,7 +103,13 @@ Nei passaggi seguenti viene descritto come creare e configurare un file MSI. Il 
 
 ### Prerequisiti per personalizzare il programma di installazione {#prerequisites-for-customizing-the-installer}
 
-Puoi personalizzare il programma di installazione utilizzando l’editor di database Orca. Nei passaggi seguenti viene descritto come creare un file MSI personalizzato modificando una copia del file di installazione MSI con l’editor di database Orca. Orca è disponibile come parte di Windows SDK per Windows Server 2008 e .NET Framework 3.5. Per ulteriori informazioni su come modificare i file di installazione di Microsoft Windows® con Orca, consulta il [Supporto Microsoft](http://support.microsoft.com/kb/255905/EN-US/).
+Puoi personalizzare il programma di installazione utilizzando l’editor di database Orca. Nei passaggi seguenti viene descritto come creare un file MSI personalizzato modificando una copia del file di installazione MSI con l’editor di database Orca. Orca è disponibile come parte di Windows SDK per Windows Server 2008 e .NET Framework 3.5.
+
+<!--
+
+For more information about how to edit Microsoft Windows® Installer files using Orca, see [Microsoft Support](http://support.microsoft.com/kb/255905/EN-US/).
+
+-->
 
 >[!NOTE]
 >
@@ -112,7 +117,7 @@ Puoi personalizzare il programma di installazione utilizzando l’editor di data
 
 #### Installare Orca {#install-orca}
 
-1. Scarica Windows SDK per Windows Server 2008 e .NET Framework 3.5 dall’[Area download Microsoft](http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=11310).
+1. Scaricare l&#39;SDK di Windows per Windows Server 2008 e .NET Framework 3.5.
 1. Fai doppio clic sul file Orca.msi nella cartella \Microsoft SDK\bin.
 
    È necessaria anche la variante MSI del file di installazione. Contatta il supporto Adobe per ricevere la versione più recente del file di installazione MSI.
@@ -180,7 +185,7 @@ Dopo aver attivato la funzione di applicazione automatica della policy, il docum
 * quando l’utente modifica e salva un documento non protetto;
 * quando l’utente apre un’applicazione che si apre con un documento predefinito, modifica e quindi salva il documento.
 
-### Configurare la funzione di applicazione automatica della policy nel file MSI {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### Configurare la funzione di applicazione automatica della policy nel file MSI  {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 Prima di iniziare, preconfigura il programma di installazione in modo da selezionare il server LiveCycle o AEM Forms, come descritto in precedenza in questo articolo.
 
@@ -264,7 +269,7 @@ Per informazioni sulla configurazione della funzione di applicazione automatica 
 
 È possibile modificare le impostazioni del Registro di sistema di Windows in modo da far coesistere la filigrana dinamica con le intestazioni e i piè di pagina esistenti. Le impostazioni del Registro di sistema rendono disponibile la filigrana solo durante la stampa. Per aggiornare il Registro di sistema e abilitare le filigrane durante la stampa, effettua le seguenti operazioni:
 
-1. Crea una copia di backup del Registro di sistema di Windows prima di modificarlo. Per istruzioni dettagliate, consulta [Come modificare il Registro di sistema di Windows](https://support.microsoft.com/it-it/kb/136393).
+1. Crea una copia di backup del Registro di sistema di Windows prima di modificarlo. Per istruzioni dettagliate, consulta [Come modificare il Registro di sistema di Windows](https://support.microsoft.com/en-us/kb/136393).
 1. Nell’editor del Registro di sistema, passa a HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 oppure HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
 1. Crea una nuova chiave del Registro di sistema **WatermarkMode**.
 1. Nella chiave del Registro di sistema WatermarkMode, crea un valore DWORD **WatermarkMode** e imposta il valore DWORD **WatermarkMode** su **1**.
@@ -358,7 +363,7 @@ Il file CommonResources.dll contiene informazioni sui modelli di risorse. Includ
    >
    >Non eliminare o aggiungere tipi di risorse in ordine casuale. Dopo 101, configura 102 e così via.
 
-### Creare un pacchetto personalizzato del file CommonResources.dll con il programma di installazione di AEM Document Security Extension for Microsoft Office {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
+### Creare un pacchetto personalizzato del file CommonResources.dll con il programma di installazione di AEM Document Security Extension for Microsoft Office   {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
 
 Il file CommonResources.dll può essere personalizzato con una pagina di copertina personalizzata. Dopo aver personalizzato il file, puoi sostituire manualmente il file originale con il file personalizzato su tutte le workstation, oppure puoi ricorrere a un metodo automatizzato.
 
