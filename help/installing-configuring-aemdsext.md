@@ -7,9 +7,9 @@ topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 source-git-commit: 13c487b13acb0d65f02301c881bfade512428bcd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2764'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,11 +40,11 @@ Prima di installare Document Security Extension for Microsoft Office, assicurati
 >
 >È supportata l’installazione di una versione a 32 bit dell’estensione Document Security su un sistema operativo a 64 bit, ma non il contrario. In altre parole, non è possibile installare la versione a 64 bit dell’estensione Document Security per Microsoft Office in un sistema operativo a 32 bit.
 
-### Disattivare McAfee VirusScan  {#disable-mcafee-virusscan}
+### Disattivare McAfee VirusScan {#disable-mcafee-virusscan}
 
 Per garantire un avvio ottimale delle applicazioni Office nei computer in cui sono installati Document Security Extension e McAfee VirusScan con scansione all’accesso abilitata, disabilita l’opzione di protezione da overflow del buffer nella console di McAfee VirusScan.
 
-### Disinstallare plug-in di terze parti {#uninstall-third-party-plug-ins}
+### Disinstallare i plug-in di terze parti {#uninstall-third-party-plug-ins}
 
 AEM Document Security Extension for Microsoft Office non supporta plug-in di terze parti per applicazioni Microsoft Office. L’estensione va in conflitto con i plug-in di terze parti ed è quindi necessario disinstallare eventuali plug-in non Adobe per Microsoft Office prima di installare Document Security for Microsoft Office. Adobe non fornisce il supporto per applicazioni Document Security for Microsoft Office con plug-in di terze parti installati.
 
@@ -117,7 +117,7 @@ For more information about how to edit Microsoft Windows® Installer files using
 
 #### Installare Orca {#install-orca}
 
-1. Scaricare l&#39;SDK di Windows per Windows Server 2008 e .NET Framework 3.5.
+1. Scarica Windows SDK per Windows Server 2008 e .NET Framework 3.5.
 1. Fai doppio clic sul file Orca.msi nella cartella \Microsoft SDK\bin.
 
    È necessaria anche la variante MSI del file di installazione. Contatta il supporto Adobe per ricevere la versione più recente del file di installazione MSI.
@@ -185,7 +185,7 @@ Dopo aver attivato la funzione di applicazione automatica della policy, il docum
 * quando l’utente modifica e salva un documento non protetto;
 * quando l’utente apre un’applicazione che si apre con un documento predefinito, modifica e quindi salva il documento.
 
-### Configurare la funzione di applicazione automatica della policy nel file MSI  {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### Configurare la funzione di applicazione automatica della policy nel file MSI  {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 Prima di iniziare, preconfigura il programma di installazione in modo da selezionare il server LiveCycle o AEM Forms, come descritto in precedenza in questo articolo.
 
@@ -269,7 +269,7 @@ Per informazioni sulla configurazione della funzione di applicazione automatica 
 
 È possibile modificare le impostazioni del Registro di sistema di Windows in modo da far coesistere la filigrana dinamica con le intestazioni e i piè di pagina esistenti. Le impostazioni del Registro di sistema rendono disponibile la filigrana solo durante la stampa. Per aggiornare il Registro di sistema e abilitare le filigrane durante la stampa, effettua le seguenti operazioni:
 
-1. Crea una copia di backup del Registro di sistema di Windows prima di modificarlo. Per istruzioni dettagliate, consulta [Come modificare il Registro di sistema di Windows](https://support.microsoft.com/en-us/kb/136393).
+1. Crea una copia di backup del Registro di sistema di Windows prima di modificarlo. Per istruzioni dettagliate, consulta [Come modificare il Registro di sistema di Windows](https://support.microsoft.com/it-it/kb/136393).
 1. Nell’editor del Registro di sistema, passa a HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 oppure HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
 1. Crea una nuova chiave del Registro di sistema **WatermarkMode**.
 1. Nella chiave del Registro di sistema WatermarkMode, crea un valore DWORD **WatermarkMode** e imposta il valore DWORD **WatermarkMode** su **1**.
@@ -363,7 +363,7 @@ Il file CommonResources.dll contiene informazioni sui modelli di risorse. Includ
    >
    >Non eliminare o aggiungere tipi di risorse in ordine casuale. Dopo 101, configura 102 e così via.
 
-### Creare un pacchetto personalizzato del file CommonResources.dll con il programma di installazione di AEM Document Security Extension for Microsoft Office   {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
+### Creare un pacchetto personalizzato del file CommonResources.dll con il programma di installazione di AEM Document Security Extension for Microsoft Office  {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
 
 Il file CommonResources.dll può essere personalizzato con una pagina di copertina personalizzata. Dopo aver personalizzato il file, puoi sostituire manualmente il file originale con il file personalizzato su tutte le workstation, oppure puoi ricorrere a un metodo automatizzato.
 
