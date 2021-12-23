@@ -1,7 +1,6 @@
 ---
-source-git-commit: 19de0b62ac493c7507581abb607b008c64f77597
-workflow-type: ht
-translation-type: ht
+source-git-commit: 362a6222c16f5a3f2a0bb2a9d365d2af4dbccfee
+workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 100%
 
@@ -10,7 +9,7 @@ ht-degree: 100%
 
 ## La nostra promessa
 
-Nell’ottica di promuovere un ambiente aperto e accogliente, in qualità di gestori e collaboratori ci impegniamo a rendere la procedura di partecipazione il più semplice possibile per tutti, indipendentemente dall’età, dall’aspetto fisico, da eventuali disabilità, dall’etnia, dall’identità ed espressione di genere, dal livello di esperienza, dalla nazionalità, dall’aspetto personale, dalla razza, dalla religione o dall’identità e orientamento sessuali.
+Nell’ottica di promuovere un ambiente aperto e accogliente, in qualità di gestori e collaboratori ci impegniamo a rendere la procedura di partecipazione il più semplice possibile per tutti, indipendentemente da età, aspetto fisico, disabilità, etnia, identità ed espressione di genere, livello di esperienza, nazionalità, aspetto personale, razza, religione o identità e orientamento sessuali.
 
 ## I nostri standard
 
@@ -32,18 +31,17 @@ Di seguito sono elencati esempi di comportamenti inaccettabili da parte dei part
 
 ## Le nostre responsabilità
 
-I project manager hanno la responsabilità di chiarire gli standard di comportamento accettabile e sono tenuti ad adottare misure correttive eque ed adeguate in risposta a qualsiasi evento di comportamento inaccettabile.
+I gestori dei progetti hanno la responsabilità di chiarire gli standard di comportamento accettabile e sono tenuti ad adottare misure correttive eque ed adeguate in risposta a qualsiasi evento di comportamento inaccettabile.
 
 I gestori dei progetti hanno il diritto e la responsabilità di rimuovere, modificare o rifiutare commenti, commit, codice, modifiche wiki, problemi e altri contributi non allineati al presente Codice di condotta o di escludere in modo temporaneo o permanente qualsiasi collaboratore per qualsiasi comportamento che ritenga inappropriato, minaccioso, offensivo o dannoso.
 
 ## Ambito
 
-Il presente Codice di Condotta ha validità sia negli spazi in cui si svolge il progetto sia negli spazi pubblici in cui un individuo rappresenta il progetto o la relativa comunità. Per “rappresentare un progetto o una comunità” si intende, ad esempio, utilizzare un indirizzo e-mail ufficiale del progetto, pubblicare tramite un account social media ufficiale o intervenire come rappresentante designato nel corso di un evento online o offline. La rappresentazione di un progetto può essere ulteriormente definita e illustrata dai gestori del progetto.
+Il presente Codice di Condotta ha validità sia negli spazi in cui si svolge il progetto sia negli spazi pubblici in cui un individuo rappresenta il progetto o la relativa comunità. Per “rappresentare un progetto o una comunità” si intende, ad esempio, utilizzare un indirizzo e-mail ufficiale del progetto, pubblicare tramite un account social media ufficiale o intervenire come rappresentante designato nel corso di un evento online o offline. La rappresentazione di un progetto può essere ulteriormente definita e illustrata dai project manager.
 
 ## Applicazione
 
-Eventuali comportamenti offensivi, vessatori o altrimenti inaccettabili possono essere segnalati contattando il team del progetto all’indirizzo Grp-opensourceoffice@adobe.com. Tutte le segnalazioni saranno prese in considerazione ed esaminate e avranno come esito la produzione di una risposta ritenuta necessaria e appropriata alle circostanze. Il team del progetto è tenuto a mantenere la riservatezza in merito all’autore della segnalazione.
-Ulteriori dettagli su specifiche politiche di applicazione possono essere pubblicati separatamente.
+Eventuali comportamenti offensivi, vessatori o altrimenti inaccettabili possono essere segnalati contattando il team del progetto all’indirizzo Grp-opensourceoffice@adobe.com. Tutte le segnalazioni saranno prese in considerazione ed esaminate e avranno come esito la produzione di una risposta ritenuta necessaria e appropriata alle circostanze. Il team del progetto è tenuto a mantenere la riservatezza in merito all’autore della segnalazione. Ulteriori dettagli su specifiche politiche di applicazione possono essere pubblicati separatamente.
 
 I gestori dei progetti che non seguono o non applicano in buona fede il Codice di condotta potrebbero essere soggetti a misure temporanee o permanenti determinate dagli altri membri della leadership del progetto.
 
