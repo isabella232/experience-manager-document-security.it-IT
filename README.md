@@ -1,13 +1,13 @@
 ---
 source-git-commit: 1bc44195024fc4679c7730fa9c7b309c84c55605
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '79'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
-# Documentazione AEM Document Security Extension per Microsoft Office
+# Documentazione di AEM Document Security Extension for Microsoft Office
 
-Questo è l&#39;archivio per AEM Document Security Extension for Microsoft Office Documentation.
+Questo è l’archivio per la documentazione di AEM Document Security Extension for Microsoft Office.
 
 Saremo lieti di accogliere anche il contributo alla documentazione. Consulta le risorse seguenti:
 
