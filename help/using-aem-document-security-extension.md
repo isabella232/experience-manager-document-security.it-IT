@@ -1,25 +1,25 @@
 ---
-title: Utilizzo di AEM Document Security Extension for Microsoft Office
+title: Utilizzo dell'estensione Document Security AEM per Microsoft&reg; Office
 description: È possibile controllare in che modo i destinatari utilizzano i file protetti da policy, indipendentemente dal numero di persone a cui sono stati distribuiti. Questo documento spiega come proteggere i file e come utilizzare i file protetti.
 uuid: db4abbc8-eb21-4f4a-9950-224ada95ce66
 content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 13c487b13acb0d65f02301c881bfade512428bcd
-workflow-type: ht
-source-wordcount: '6252'
-ht-degree: 100%
+source-git-commit: f3456fa7243405a4986ac50540f8b578a6412a6c
+workflow-type: tm+mt
+source-wordcount: '6231'
+ht-degree: 77%
 
 ---
 
-# Utilizzo di AEM Document Security Extension for Microsoft Office{#using-aem-document-security-extension-for-microsoft-office}
+# Utilizzo dell&#39;estensione Document Security AEM per Microsoft® Office{#using-aem-document-security-extension-for-microsoft-office}
 
 ## Proteggere i file con AEM Document Security Extension {#usingaemdocumentsecurityextensiontoprotectfiles}
 
 È possibile controllare in che modo i destinatari utilizzano i file protetti da policy, indipendentemente dal numero di persone a cui sono stati distribuiti.
 
-Con Document Security Extension for Microsoft Office è possibile effettuare le seguenti operazioni:
+Utilizzando l&#39;estensione Document Security per Microsoft® Office, è possibile eseguire le seguenti operazioni:
 
 * Configurare la connessione a Document Security
 * Applicare una policy a un file
@@ -27,21 +27,21 @@ Con Document Security Extension for Microsoft Office è possibile effettuare le 
 * Rimuovere la protezione tramite policy da un file
 * Modificare la policy applicata a un file
 * Aprire le pagine web di Document Security per revocare l’accesso a un file o cambiare la policy applicata al file
-* Aprire le pagine web di Document Security per visualizzare la cronologia di controllo di un file
+* Apri le pagine web di Document Security per visualizzare la cronologia del controllo del file
 
 ### Connettersi a un server di Document Security {#connect-to-a-document-security-server}
 
-Se desideri applicare una policy a un file, devi prima configurare le impostazioni di connessione per Document Security. In base al modo in cui è stato installato Document Security Extension for Microsoft Office, è possibile che siano già attive le impostazioni di connessione predefinite. Puoi tuttavia aggiungere impostazioni di connessione per una o più istanze di Document Security e ottenere informazioni sul server dall’amministratore di Document Security.
+Se desideri applicare una policy a un file, devi prima configurare le impostazioni di connessione per Document Security. A seconda del modo in cui è stata installata l&#39;estensione Document Security per Microsoft® Office, è possibile che siano già presenti impostazioni di connessione predefinite. Puoi tuttavia aggiungere impostazioni di connessione per una o più istanze di Document Security e ottenere informazioni sul server dall’amministratore di Document Security.
 
-Devi impostare come server predefinito quello che desideri utilizzare per proteggere i file o gestire i file protetti. Quando applichi una policy a un nuovo file o apri le pagine web di Document Security, Document Security Extension for Microsoft Office si connette infatti al server predefinito. Se proteggi i file utilizzando più di un’istanza di Document Security, devi modificare l’impostazione del server predefinito ogni volta che passi da un server all’altro. Potrai continuare ad aprire i file protetti da qualsiasi istanza di Document Security finché disporrai delle relative autorizzazioni di apertura.
+Impostare il server che si desidera utilizzare per proteggere i file o gestire i file protetti come server predefinito. Quando si applica un criterio a un nuovo file o si aprono le pagine Web di Document Security, l&#39;estensione Document Security per Microsoft® Office si connette al server predefinito. Se proteggi i file utilizzando più di un’istanza di Document Security, devi modificare l’impostazione del server predefinito ogni volta che passi da un server all’altro. Potrai continuare ad aprire i file protetti da qualsiasi istanza di Document Security finché disporrai delle relative autorizzazioni di apertura.
 
-Se il server di Document Security utilizza l’autenticazione basata su certificati, dovrai installare il certificato ricevuto nel computer locale. Ti verrà chiesto di scegliere l’autenticazione basata su certificati e di fornire il certificato da utilizzare per l’autenticazione.
+Se nel server Document Security è utilizzata l&#39;autenticazione basata su certificato, è necessario installare il certificato ricevuto nel computer locale. È necessario scegliere l’autenticazione basata sui certificati e specificare il certificato da utilizzare per l’autenticazione.
 
-Dopo aver configurato le impostazioni di connessione per un’istanza di Document Security in un’applicazione Microsoft Office, questa viene configurata per Word, Excel e PowerPoint.
+Dopo aver configurato le impostazioni di connessione per un&#39;istanza di Document Security in un&#39;applicazione Microsoft® Office, viene configurato per tutto Word, Excel e PowerPoint.
 
 #### Installare il certificato lato client {#install-the-client-side-certificate}
 
-Se devi accedere alle pagine web di Document Security tramite l’autenticazione basata su certificati o l’autenticazione a due vie, riceverai il certificato da installare nel computer locale. Riceverai il file del certificato (.PFX o .P12) e la relativa password.
+Se è necessario accedere alle pagine Web di Document Security tramite autenticazione dei certificati o autenticazione bidirezionale, si riceve il certificato da installare nel computer locale. Riceverai il file del certificato (.PFX o .P12) e la relativa password.
 
 1. Salva il file del certificato nel computer locale.
 1. Fai doppio clic sul file del certificato per aprire l’Importazione guidata certificati e fai clic su **Avanti**.
@@ -52,13 +52,13 @@ Se devi accedere alle pagine web di Document Security tramite l’autenticazione
 
 #### Configurare le impostazioni di connessione {#configure-connection-settings}
 
-1. In Document Security Extension for Microsoft Office 2010 e Office 2013, nella scheda **Document Security**, seleziona **Scegli server**.
-1. Fai clic su **Nuovo** per creare nuove impostazioni di connessione oppure seleziona una connessione esistente e fai clic su **Modifica**.
+1. In Document Security Extension per Microsoft® Office 2010 e Office 2013, sul **Sicurezza dei documenti** scheda , seleziona **Scegli server**.
+1. Fai clic su **Nuovo** per creare le impostazioni di connessione, oppure selezionare una connessione esistente e fare clic su **Modifica**.
 1. Digita un nome per la connessione nella casella **Nome**. Puoi specificare qualsiasi nome.
 1. Digita l’indirizzo del server nella casella **Indirizzo server**.
 1. Digita la porta del server nella casella **Porta**.
 1. (Facoltativo) Se desideri che il nome utente e la password vengano ricordati, seleziona **Ricorda password su questo computer** e digita il nome utente e la password nelle caselle corrispondenti. Si consiglia di non selezionare questa opzione se altri utenti possono accedere al computer.
-1. Fai clic su **Connetti a questo server**. Document Security Extension for Microsoft Office tenta di connettersi al server specificato. A seconda del tipo di autenticazione specificato, effettua una delle seguenti operazioni:
+1. Fai clic su **Connetti a questo server**. L&#39;estensione Document Security per Microsoft® Office tenta di connettersi al server specificato. A seconda del tipo di autenticazione specificato, effettua una delle seguenti operazioni:
 
    **Nome utente e password**
 
@@ -72,23 +72,22 @@ Se devi accedere alle pagine web di Document Security tramite l’autenticazione
 
 >[!NOTE]
 >
->Se la connessione al server non riesce, prova ad aprire le pagine web di Document Security in Internet Explorer. Se anche in questo caso la connessione al server non riesce o se viene visualizzato un avviso relativo al certificato del server, Document Security Extension for Microsoft Office non è in grado di connettersi al server. Contatta l’amministratore del server per richiedere assistenza.
+>Se la connessione al server non riesce, prova ad aprire le pagine web di Document Security in Internet Explorer. Se non è possibile connettersi al server tramite Internet Explorer o se viene visualizzato un avviso relativo al certificato del server, l&#39;estensione Document Security per Microsoft® Office non può connettersi al server. Contatta l’amministratore del server per richiedere assistenza.
 
 >[!NOTE]
->
->Se non è possibile eseguire la connessione a Document Security, viene visualizzato il seguente messaggio: “Nome utente e password non corretti. Controlla le impostazioni di configurazione e riprova”. È possibile infatti che questo messaggio venga visualizzato anche se la connessione ha esito negativo per altri motivi. Se ti stai connettendo al server per la prima volta, verifica di aver impostato correttamente il nome del server e la porta.
+Se non riesci a connetterti a Document Security, viene visualizzato un messaggio che indica che &quot;Nome utente e password non sono corretti, controlla le impostazioni di configurazione e riprova&quot;. È possibile infatti che questo messaggio venga visualizzato anche se la connessione ha esito negativo per altri motivi. Se ti stai connettendo al server per la prima volta, verifica di aver impostato correttamente il nome del server e la porta.
 
 #### Specificare il server predefinito {#specify-the-default-server}
 
 1. Effettua le seguenti operazioni:
 
-   * In Document Security Extension for Microsoft Office 2010 e Office 2013, nella scheda **Document Security**, seleziona **Scegli server**.
+   * In Document Security Extension per Microsoft® Office 2010 e Office 2013 sul **Sicurezza dei documenti** scheda , seleziona **Scegli server**.
 
 1. Seleziona un server da specificare come predefinito e fai clic su **Imposta come predefinito**. Accanto al server predefinito viene visualizzata una stella.
 
 ### Utilizzo di provider di autenticazione di terze parti {#using-third-party-authentication-providers}
 
-Con AEM Forms Document Security è possibile utilizzare anche provider di autenticazione di terze parti, che consentono di aggiungere un ulteriore livello di accesso ai documenti protetti. AEM Forms Document Security supporta i seguenti flussi di lavoro di autenticazione estesa:
+Con AEM Forms Document Security è possibile utilizzare anche provider di autenticazione di terze parti, Questi provider di autenticazione consentono di aggiungere un livello di accesso aggiuntivo ai documenti protetti. AEM Forms Document Security supporta i seguenti flussi di lavoro di autenticazione estesa:
 
 * Autenticazione estesa tramite l’URL predefinito di AEM Forms
 * Autenticazione estesa tramite un URL personalizzato
@@ -110,8 +109,7 @@ Per abilitare l’autenticazione estesa con l’URL di destinazione Adobe predef
    Fai clic su **[!UICONTROL Salva]**.
 
    >[!NOTE]
-   >
-   >Utilizza un nome host completo nell’URL. È consigliabile utilizzare il protocollo HTTPS.
+   Utilizza un nome host completo nell’URL. È consigliabile utilizzare il protocollo HTTPS.
 
    La funzione di protezione dei documenti di AEM Forms è ora configurata in modo da utilizzare l’autenticazione estesa con l’URL di destinazione di AEM Forms predefinito.
 
@@ -121,49 +119,48 @@ Per abilitare l’autenticazione estesa con l’URL di destinazione Adobe predef
 
 Per l’autenticazione estesa puoi utilizzare un URL personalizzato, che offre la flessibilità necessaria per visualizzare una pagina di autenticazione personalizzata con un branding personalizzato, ad esempio il branding dell’organizzazione.
 
-È possibile creare un pacchetto della pagina di autenticazione personalizzata in un file .war e distribuire il file sul server AEM Forms. Il file .war contiene una logica completa per accettare le credenziali utente ed effettuare l’autenticazione sul server AEM Forms. AEM Forms Document Security prevede i seguenti requisiti per la pagina di autenticazione personalizzata:
+È possibile creare un pacchetto della pagina di autenticazione personalizzata in un file war e distribuire il file WAR ad AEM Forms Server. Il file WAR contiene una logica completa per accettare le credenziali utente e autenticarsi sul server AEM Forms. AEM Forms Document Security prevede i seguenti requisiti per la pagina di autenticazione personalizzata:
 
 * La pagina di autenticazione deve inviare il nome utente come j_username e la password come j_password. La pagina deve inoltre inviare source_url e login_url come parametri nascosti.
 * Se l’autenticazione ha esito positivo, la pagina deve chiudersi automaticamente.
 
-Per abilitare l’autenticazione estesa con un URL di destinazione personalizzato, effettua le seguenti operazioni:
+Per abilitare l’autenticazione estesa con un URL di destinazione personalizzato:
 
-1. Distribuisci il file .war di autenticazione personalizzato sul server AEM Forms.
+1. Distribuisci il file WAR di autenticazione personalizzato su AEM Forms Server.
 1. Apri l’interfaccia utente di amministrazione di AEM Forms.
 1. Passa a Servizi > Document Security > Configurazione > Configurazione server.
 1. Abilita l’opzione Consenti autenticazione estesa e specifica l’URL di destinazione per l’autenticazione estesa predefinito.
-1. Aggiungi le seguenti voci al file config.xml sotto il nodo SSO dopo la voce *&lt;node name=“AllowedUrls“>*:
+1. Aggiungi le seguenti voci al file config.xml sotto il nodo SSO dopo la voce *&lt;node name=&quot;AllowedUrls&quot;>*:
 
    >[!NOTE]
-   >
-   >&lt;entry key=”sso-l” value=”/ sample_/login.jsp”/>!!discoiqbr!!&lt;entry key=”sso-s” value=”/ sample_/welcome.jsp”>!!discoiqbr!!&lt;entry key=”sso-o” value=”/ sample_/logout.jsp”/>!!discoiqbr!!
+   &lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot; />!discoiqbr!!&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>!discoiqbr!!&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot; />!discoiqbr!!
 
    Per informazioni dettagliate sull’aggiornamento del file config.xml, consulta [Modifica manuale del file di configurazione per la protezione dei documenti](https://helpx.adobe.com/it/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file).
 
    La funzione di protezione dei documenti di AEM Forms è ora configurata in modo da utilizzare l’autenticazione estesa con un URL di destinazione personalizzato.
 
-#### Flusso di lavoro di autenticazione estesa predefinito con provider di identità di terze parti configurati nel server AEM Forms {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
+#### Workflow di autenticazione estesa predefinito con provider di identità di terze parti configurati su AEM Forms Server {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
 
-L’autenticazione estesa può utilizzare i diversi tipi di autenticazione disponibili sul server AEM Forms, ad esempio SAML. [Altri esempi].
+L’autenticazione estesa può utilizzare diversi tipi di autenticazione disponibili su AEM Forms Server. ad esempio SAML. [Altri esempi].
 
-Nota: se nel server AEM Forms sono configurati provider SAML, prima di visualizzare l’URL di destinazione viene visualizzata una pagina contenente tutti i provider di identità configurati per le autenticazioni SAML.
+Nota: Se i provider SAML sono configurati su AEM Forms Server, prima di visualizzare l&#39;URL di destinazione viene visualizzata una pagina contenente tutti i provider di identità configurati per le autenticazioni SAML.
 
 Quando un documento protetto viene aperto in Acrobat, viene visualizzata la schermata seguente.
 
-#### Flusso di lavoro di autenticazione estesa personalizzato con provider SAML configurati sul server AEM Forms {#custom-extended-authentication-workflow-when-saml-providers-are-configured-on-aem-forms-server}
+#### Workflow di autenticazione estesa personalizzato quando i provider SAML sono configurati su AEM Forms Server {#custom-extended-authentication-workflow-when-saml-providers-are-configured-on-aem-forms-server}
 
-Se nel server AEM Forms sono configurati provider SAML, prima di visualizzare l’URL di destinazione viene visualizzata una pagina contenente tutti i provider di identità configurati per le autenticazioni SAML.
+Se i provider SAML sono configurati su AEM Forms Server, prima di visualizzare l&#39;URL di destinazione viene visualizzata una pagina contenente tutti i provider di identità configurati per le autenticazioni SAML.
 
-Prerequisiti per configurare un flusso di lavoro di autenticazione estesa personalizzato con provider SAML configurati sul server AEM Forms
+Le caratteristiche per configurare un flusso di lavoro di autenticazione estesa personalizzato quando i provider SAML sono configurati su AEM Forms Server sono:
 
-* Sul server AEM Forms devono essere configurate le autenticazioni SAML
-* Sul server AEM Forms deve essere distribuito il file .war personalizzato, contenente una pagina di autenticazione personalizzata e la logica completa per accettare le credenziali utente ed effettuare l’autenticazione sul server AEM Forms.
+* Le autenticazioni SAML sono configurate su AEM Forms Server
+* La guerra personalizzata, contenente una pagina di autenticazione personalizzata e una logica completa per accettare le credenziali utente e autenticarsi sul server AEM Forms, viene distribuita su AEM Forms Server.
 
 #### Utilizzo di una pagina personalizzata per l’elenco delle autenticazioni SAML {#using-custom-page-for-listing-saml-authentications}
 
-Puoi anche scegliere di visualizzare una pagina personalizzata in cui includere tutti i provider di autenticazione configurati sul server AEM Forms. Per creare una pagina di questo tipo, effettua le seguenti operazioni:
+È inoltre possibile visualizzare una pagina personalizzata che includa tutti i provider di autenticazione configurati su AEM Forms Server. Per creare una pagina di questo tipo:
 
-1. Crea un pacchetto della pagina di autenticazione personalizzata in un file .war e distribuisci il file sul server AEM Forms. Il file .war contiene una logica completa per accettare le credenziali utente ed effettuare l’autenticazione sul server AEM Forms.
+1. Creare un pacchetto della pagina di autenticazione personalizzata in un file war e distribuire il file WAR su AEM Forms Server. Il file WAR contiene una logica completa per accettare le credenziali utente e autenticarsi sul server AEM Forms.
 1. Apri l’interfaccia utente di amministrazione di AEM Forms e vai a **[!UICONTROL Impostazioni]** > **[!UICONTROL Gestione utente]** > **[!UICONTROL Configurazione]** > **[!UICONTROL Impostazioni provider di servizi SAML]**.
 1. Aggiungi quanto segue al campo Proprietà personalizzate e fai clic su **[!UICONTROL Salva]**.
 
@@ -181,8 +178,7 @@ Se non disponi già di un account di Document Security, viene avviato il process
 Dopo aver registrato e attivato l’account, puoi utilizzare i file protetti tramite policy per i quali hai ricevuto l’autorizzazione all’uso tramite una policy.
 
 >[!NOTE]
->
->Se ricevi un file protetto tramite policy ma non disponi di un account di Document Security o se ricevi un invito a registrarti, chiedi assistenza alla persona che ti ha inviato il file.
+Se ricevi un file protetto tramite policy ma non disponi di un account di Document Security o se ricevi un invito a registrarti, chiedi assistenza alla persona che ti ha inviato il file.
 
 Se ricevi un invito da Document Security a registrarti tramite e-mail, puoi utilizzare l’URL contenuto nel messaggio e-mail per aprire la pagina di registrazione online. Dopo la registrazione, riceverai un secondo avviso sull’attivazione dell’account.
 
@@ -193,8 +189,7 @@ Se ricevi un invito da Document Security a registrarti tramite e-mail, puoi util
 1. Digita il tuo nome, la tua organizzazione e la tua password nelle caselle corrispondenti. La password può essere costituita da una qualsiasi combinazione di otto caratteri.
 
    >[!NOTE]
-   >
-   >Accertati di scegliere una password facile da ricordare; non è previsto alcun metodo per recuperare una password dimenticata.
+   Accertati di scegliere una password facile da ricordare; non è previsto alcun metodo per recuperare una password dimenticata.
 
 1. Fai clic su **Registra**. Viene visualizzato un messaggio che ti invita a verificare nella posta se hai ricevuto un messaggio e-mail di attivazione.
 1. Apri il messaggio di conferma della registrazione a Document Security.
@@ -323,7 +318,7 @@ Alcune delle impostazioni disponibili per la creazione di policy nelle pagine we
  </tbody>
 </table>
 
-Per ulteriori informazioni sulla creazione e la gestione delle policy, consulta [Guida per l’utente finale di Document Security](http://help.adobe.com/en_US/AEMForms/6.1/RMHelp/).
+Per ulteriori informazioni sulla creazione e la gestione delle policy, consulta [Guida per l’utente finale di Document Security](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/).
 
 ### Applicare le policy {#applying-policies}
 
@@ -332,12 +327,11 @@ Puoi applicare a un file qualsiasi policy disponibile, tra cui le policy create 
 Dopo aver applicato una policy, questa viene aggiunta all’elenco Usate di recente accessibile dal menu di AEM Document Security per facilitarne l’applicazione. Se utilizzi più di un’istanza di Document Security, nell’elenco Usate di recente vengono visualizzate solo le policy relative al server a cui sei attualmente connesso o, se non hai ancora eseguito l’accesso ad alcuna istanza di Document Security, solo le policy relative al server predefinito.
 
 >[!NOTE]
->
->È possibile applicare le policy solo a file di documenti Word (.doc, .docx e .docm in Microsoft Office 2010 e 2013), a file di cartelle di lavoro Excel (.xls, .xlsx e .xlsm in Microsoft Office 2010 e 2013) e a file di presentazioni PowerPoint (.ppt, .pptx, e .pptm in Microsoft Office 2010 e 2013). Non è possibile applicarle invece a file di modelli Word (.dot), a file di modelli Excel (.xlt) e a file di modelli di struttura PowerPoint (.pot).
+È possibile applicare i criteri solo ai file di documento di Word (.doc, anche.docx e .docm in Microsoft® Office 2010 e 2013), ai file di cartella di lavoro di Excel (.xls, anche .xlsx e .xlsm in Microsoft® Office 2010 e 2013) e ai file di presentazione di PowerPoint (.ppt, anche .pptx e .pptm in Microsoft® Office 2010 e 2013). Non è possibile applicarle invece a file di modelli Word (.dot), a file di modelli Excel (.xlt) e a file di modelli di struttura PowerPoint (.pot).
 
 #### Applicare una policy {#apply-a-policy}
 
-1. In Document Security Extension for Microsoft Office 2010 e 2013, nella scheda **Document Security**, seleziona **Proteggi > Scegli policy**.
+1. In Document Security Extension per Microsoft® Office 2010 e 2013 sul **Sicurezza dei documenti** scheda , seleziona **Protetto > Scegli criterio**.
 
    Se scegli nome utente e password come metodo di autenticazione sul server e non hai ancora fornito le informazioni di accesso a Document Security, viene visualizzata una finestra di dialogo in cui devi immettere il nome utente e la password.
 
@@ -346,28 +340,27 @@ Dopo aver applicato una policy, questa viene aggiunta all’elenco Usate di rece
 
 #### Applicare una policy usata di recente {#apply-a-recently-used-policy}
 
-1. In Document Security Extension for Microsoft Office 2010 e 2013, nella scheda **Document Security**, seleziona **Proteggi > ***[Nome policy]*.
+1. In Document Security Extension per Microsoft® Office 2010 e 2013, sul **Sicurezza dei documenti** scheda , seleziona **Protetto > ***[Nome criterio]*.
 1. Salva il file.
 
 ## Utilizzare i file protetti tramite policy {#usingaemdocumentsecurityextensionpolicyprotectedfiles}
 
 I file protetti tramite policy contengono proprietà intellettuale di proprietà dell’autore e protetta tramite Document Security.
 
-Puoi comunque utilizzare i file protetti tramite policy indipendentemente dal fatto che tu sia interno o esterno all’organizzazione di appartenenza dell’autore del file. Per aprire un file protetto tramite policy, devi essere riconosciuto da Document Security, sia tramite l’inclusione in un elenco LDAP o Active Directory collegato, a cui essere aggiunto come utente locale per LiveCycle o AEM Forms su JEE, sia mediante la registrazione in Document Security dopo essere stato invitato come utente.
+È possibile utilizzare file protetti da policy sia interni che esterni all&#39;organizzazione dell&#39;editore del file. Per aprire un file protetto tramite policy, devi essere riconosciuto da Document Security, sia tramite l’inclusione in un elenco LDAP o Active Directory collegato, a cui essere aggiunto come utente locale per LiveCycle o AEM Forms su JEE, sia mediante la registrazione in Document Security dopo essere stato invitato come utente.
 
 Se ricevi un file protetto tramite policy ma non disponi di un account di Document Security o se ricevi un invito a registrarti, chiedi assistenza alla persona che ti ha inviato il file.
 
-### Utilizzo di file protetti tramite policy in Microsoft Office {#working-with-policy-protected-files-in-microsoft-office}
+### Utilizzo di file protetti da policy in Microsoft® Office {#working-with-policy-protected-files-in-microsoft-office}
 
-Document Security Extension for Microsoft Office limita alcune funzionalità di Word, Excel e PowerPoint per proteggere la proprietà intellettuale dell’autore del file. Se non disponi dell’autorizzazione necessaria per modificare il file, non puoi salvare eventuali modifiche apportate.
+L&#39;estensione Document Security per Microsoft® Office limita alcune funzionalità di Word, Excel e PowerPoint per proteggere la proprietà intellettuale dell&#39;autore del file. Se non disponi dell’autorizzazione necessaria per modificare il file, non puoi salvare eventuali modifiche apportate.
 
 Se stai utilizzando un file protetto tramite policy, è possibile che alcune funzioni del prodotto non siano disponibili o non funzionino normalmente. Se inoltre hai un file non protetto aperto, la maggior parte delle funzioni è abilitata per il file non protetto, ad eccezione di quelle che consentono di importare o copiare contenuti da un file protetto tramite policy, se non disponi delle autorizzazioni per la copia o l’esportazione.
 
 >[!NOTE]
->
->Quando utilizzi applicazioni Office supportate da Document Security Extension, è consigliabile disabilitare la funzione Protezione esecuzione programmi di Windows. Inoltre, per garantire un avvio ottimale delle applicazioni Office nei computer in cui sono installati Document Security Extension e McAfee VirusScan con scansione all’accesso abilitata, disabilita l’opzione di protezione da overflow del buffer nella console di McAfee VirusScan.
+Quando utilizzi applicazioni Office supportate da Document Security Extension, è consigliabile disabilitare la funzione Protezione esecuzione programmi di Windows. Inoltre, per garantire un avvio ottimale delle applicazioni Office nei computer in cui sono installati Document Security Extension e McAfee VirusScan con scansione all’accesso abilitata, disabilita l’opzione di protezione da overflow del buffer nella console di McAfee VirusScan.
 
-Se una funzione non è disponibile, il nome di comando nel menu e il pulsante correlato sulla barra degli strumenti non sono disponibili. In Document Security Extension for Microsoft Office, quando passi il puntatore del mouse sul comando o sul pulsante, una descrizione comando indica che il comando è stato reso non disponibile da Document Security.
+Se una funzione non è disponibile, il nome di comando nel menu e il pulsante correlato sulla barra degli strumenti non sono disponibili. In Document Security Extension for Microsoft® Office, quando si posiziona il puntatore del mouse sul comando o sul pulsante, una descrizione comandi indica che il comando è reso non disponibile da Document Security.
 
 ### Apertura di file protetti tramite policy {#opening-policy-protected-files}
 
@@ -377,7 +370,7 @@ Se non disponi dell’autorizzazione necessaria per aprire il file, verrai avvis
 
 Quando viene aperto un file protetto, il testo che segue il nome del file nella barra del titolo informa che il file è protetto tramite AEM Document Security.
 
-Quando apri un documento protetto in Document Security Extension for Microsoft Office da SharePoint Server, accertati che sia aperto il programma Microsoft Office associato al tipo di file, ad esempio Microsoft Word, Microsoft Excel o Microsoft PowerPoint. Se provi ad aprire il file senza prima aver aperto l’applicazione associata, è possibile che il documento non si apra e che venga visualizzato un messaggio di errore in cui si informa che è necessario installare il plug-in appropriato. Oltre ad aprire l’applicazione necessaria, è opportuno anche svuotare la cartella della cache prima di aprire un documento protetto in Document Security Extension for Microsoft Office da SharePoint Server. Quando apri un documento protetto da SharePoint Server, vengono inoltre disattivate tutte le autorizzazioni sul documento, indipendentemente dalle policy applicate.
+Quando si apre un documento protetto in Document Security Extension for Microsoft® Office da SharePoint Server, verificare che il programma Microsoft® Office associato al tipo di file, ad esempio Microsoft® Word, Microsoft® Excel o Microsoft® PowerPoint, sia aperto. Se provi ad aprire il file senza prima aver aperto l’applicazione associata, è possibile che il documento non si apra e che venga visualizzato un messaggio di errore in cui si informa che è necessario installare il plug-in appropriato. Oltre ad aprire l&#39;applicazione richiesta, è consigliabile cancellare la cartella della cache prima di aprire un documento protetto in Document Security Extension per Microsoft® Office da SharePoint Server. Quando apri un documento protetto da SharePoint Server, vengono inoltre disattivate tutte le autorizzazioni sul documento, indipendentemente dalle policy applicate.
 
 A seconda del metodo di autenticazione implementato in Document Security, è possibile che, all’apertura di un documento protetto, venga richiesto di scegliere il metodo di autenticazione desiderato. Se Document Security supporta più di un metodo di autenticazione, vengono visualizzate tutte le opzioni di autenticazione disponibili. Se, ad esempio, il server di Document Security prevede l’autenticazione sia tramite nome utente/password sia tramite certificato, puoi scegliere il metodo di autenticazione appropriato. Se è abilitata l’autenticazione basata su certificati, ti viene richiesto di utilizzare il certificato ricevuto e installato.
 
@@ -387,33 +380,31 @@ L’esperienza utente all’apertura di un file protetto dipende dalla configura
 
 Puoi rimuovere la protezione tramite policy da un file protetto solo se disponi della necessaria autorizzazione. In questo modo, il file non risulterà più protetto tramite Document Security.
 
-1. In Document Security Extension for Microsoft Office 2010 e 2013, nella scheda **Document Security**, seleziona **Rimuovi**.
+1. In Document Security Extension per Microsoft® Office 2010 e 2013, sul **Sicurezza dei documenti** scheda , seleziona **Rimuovi**.
 
    Se non hai ancora fornito le informazioni di accesso a Document Security, viene visualizzata una finestra di dialogo in cui devi immettere il nome utente e la password.
 
 >[!NOTE]
->
->Se non riesci a rimuovere una policy da un file che hai protetto, contatta un amministratore di Document Security.
+Se non riesci a rimuovere una policy da un file che hai protetto, contatta un amministratore di Document Security.
 
 ### Visualizzazione delle impostazioni di protezione {#viewing-security-settings}
 
 Puoi visualizzare le autorizzazioni di cui disponi per il file corrente a livello di stampa, copia, modifica e accesso offline, oltre al periodo di validità del file.
 
-In Document Security Extension for Microsoft Office 2010, le autorizzazioni per il file vengono visualizzate nel gruppo Stato protezione della scheda Document Security.
+In Estensione Document Security per Microsoft® Office 2010, il gruppo Stato protezione nella scheda Sicurezza documento visualizza le autorizzazioni per il file.
 
 Effettua le seguenti operazioni:
 
-* In Document Security Extension for Microsoft Office 2010 e 2013, nel gruppo **Stato protezione** della scheda **Document Security**, fai clic su una voce qualsiasi.
+* In Document Security Extension per Microsoft® Office 2010 e 2013, sul **Scheda Sicurezza documento**, nella **Stato di protezione** fare clic su un elemento.
 
 ### Salvataggio dei documenti quando è abilitata l’applicazione automatica della policy {#saving-documents-when-auto-apply-policy-is-enabled}
 
-Se l’amministratore ha abilitato la funzione di applicazione automatica della policy, tutti i documenti creati o modificati verranno automaticamente protetti nel momento in cui vengono salvati.
+Se l&#39;amministratore ha abilitato la funzionalità di applicazione automatica dei criteri, qualsiasi documento creato o modificato viene protetto automaticamente al momento del salvataggio del documento.
 
-Se questa funzione è abilitata, Document Security Extension for Microsoft Office ti richiederà di accedere al server di Document Security. Dovrai fornire nome utente e password per poter essere autenticato dal server. Se avrai fornito le credenziali di accesso corrette, il documento verrà salvato e protetto.
+Se il criterio di applicazione automatica è abilitato, l&#39;estensione Document Security per Microsoft® Office richiede di accedere al server Document Security. Devi fornire il tuo nome utente e la tua password per essere autenticato dal server. Se sono state fornite le credenziali di accesso corrette, il documento viene salvato e protetto.
 
 >[!NOTE]
->
->Se invece non riesci ad accedere a Document Security, è possibile che il documento non venga salvato. Questo dipende dal modo in cui l’amministratore ha configurato la funzione di applicazione automatica della policy. Rivolgiti all’amministratore per sapere come vengono gestiti i documenti in questa situazione.
+Se invece non riesci ad accedere a Document Security, è possibile che il documento non venga salvato. Questo dipende dal modo in cui l’amministratore ha configurato la funzione di applicazione automatica della policy. Rivolgiti all’amministratore per sapere come vengono gestiti i documenti in questa situazione.
 
 ### Sincronizzazione per l’accesso offline {#synchronizing-for-offline-access}
 
@@ -421,19 +412,19 @@ Con le policy potrai aprire i file anche mentre sei offline e non connesso a Doc
 
 Effettua le seguenti operazioni:
 
-* In Document Security Extension for Microsoft Office 2010 e 2013, nella scheda **Document Security**, seleziona **Sincronizza offline**.
+* In Document Security Extension per Microsoft® Office 2010 e 2013, sul **Sicurezza dei documenti** scheda , seleziona **Sincronizza offline**.
 
    ***Nota**: il pulsante di sincronizzazione offline è disponibile anche se l’utente non dispone di autorizzazioni offline sul documento. Se si seleziona il pulsante, tuttavia, non viene eseguita alcuna operazione.
 
 ### Utilizzo delle filigrane dinamiche {#working-with-dynamic-watermarks}
 
-Document Security Extension for Microsoft Office supporta l’inserimento di filigrane dinamiche basate su testo nei documenti protetti tramite policy. Una filigrana dinamica può includere informazioni che possono essere modificate, come la data, l’ora, il nome utente o il nome della policy. Se un utente stampa un file protetto tramite policy e il file contiene una filigrana dinamica e l’autorizzazione di stampa, la filigrana viene visualizzata nell’output.
+L&#39;estensione Document Security per Microsoft® Office supporta l&#39;inclusione di filigrane dinamiche basate su testo nei documenti protetti da policy. Una filigrana dinamica può includere informazioni che possono essere modificate, come la data, l’ora, il nome utente o il nome della policy. Se un utente stampa un file protetto tramite policy e il file contiene una filigrana dinamica e l’autorizzazione di stampa, la filigrana viene visualizzata nell’output.
 
 Document Security Extension non supporta funzionalità avanzate per le filigrane, ad esempio filigrane basate su PDF, filigrane con più elementi, opzioni di formattazione del testo e intervalli di pagine.
 
-Puoi creare una filigrana dinamica utilizzando le pagine web di Document Security. Per ulteriori informazioni sulla creazione e l’inserimento di filigrane dinamiche in un documento protetto tramite policy, consulta [Guida per l’utente finale di Document Security](http://www.adobe.com/go/learn_lc_euRightsMgmt_11_it).
+Puoi creare una filigrana dinamica utilizzando le pagine web di Document Security. Per ulteriori informazioni sulla creazione e l’inserimento di filigrane dinamiche in un documento protetto tramite policy, consulta [Guida per l’utente finale di Document Security](https://www.adobe.com/go/learn_lc_euRightsMgmt_11).
 
-Document Security Extension for Microsoft Office supporta le seguenti funzionalità relativamente alle filigrane:
+Document Security Extension per Microsoft® Office fornisce il supporto per le seguenti funzionalità di filigrana:
 
 <table>
  <thead>
@@ -482,7 +473,7 @@ Document Security Extension for Microsoft Office supporta le seguenti funzionali
 
 Nelle pagine web di Document Security potrai creare e aggiornare le policy utente e visualizzare lo stato e le informazioni di controllo relative ai file protetti tramite policy. Potrai utilizzare le pagine web di Document Security anche per modificare le policy o revocare l’accesso a un file protetto tramite policy.
 
-Per aprire le pagine web di Document Security, in Document Security Extension for Microsoft Office 2010 e 2013, nella scheda **Document Security**, seleziona **Crea e gestisci policy**. Se non hai ancora fornito le informazioni di accesso, il browser apre automaticamente la pagina di accesso al server.
+Per aprire le pagine Web di Document Security, in Estensione Document Security per Microsoft® Office 2010 e 2013, nel **Sicurezza dei documenti** scheda , seleziona **Creare e gestire i criteri**. Se non hai ancora fornito le informazioni di accesso, il browser apre automaticamente la pagina di accesso al server.
 
 ### Modifica delle policy {#changing-policies}
 
@@ -492,7 +483,7 @@ Per modificare le impostazioni di una policy, potrai utilizzare le pagine web di
 
 1. Effettua le seguenti operazioni:
 
-   * In Document Security Extension for Microsoft Office 2010 o 2013, nella scheda **Document Security**, seleziona **Proteggi > Modifica protezione**.
+   * In Document Security Extension per Microsoft® Office 2010 o 2013, sul **Sicurezza dei documenti** scheda , seleziona **Protetto > Cambia protezione**.
 
 1. Seleziona una policy dall’elenco e fai clic su **Applica**.
 
@@ -502,13 +493,13 @@ Per modificare le impostazioni di una policy, potrai utilizzare le pagine web di
 
 1. Effettua le seguenti operazioni:
 
-   * In Document Security Extension for Microsoft Office 2010 e 2013, nella scheda **Document Security**, seleziona **Revoca**.
+   * In Document Security Extension per Microsoft® Office 2010 e 2013, sul **Sicurezza dei documenti** scheda , seleziona **Revoca**.
 
    Le pagine web di Document Security si aprono automaticamente sulla pagina Revoca documenti.
 
 1. Specifica un messaggio da visualizzare e, se disponibile, l’URL della versione aggiornata, quindi fai clic su **OK**.
 
-Per ulteriori informazioni sulla revoca dei privilegi di accesso ai file, consulta [Guida per l’utente finale di Document Security](http://help.adobe.com/en_US/AEMForms/6.1/RMHelp/).
+Per ulteriori informazioni sulla revoca dei privilegi di accesso ai file, consulta [Guida per l’utente finale di Document Security](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/).
 
 I privilegi di accesso possono essere ripristinati tramite le pagine web di Document Security.
 
@@ -538,32 +529,31 @@ Nei file Word, Excel e PowerPoint vengono controllati gli eventi seguenti:
 
 ### Visualizzare la cronologia dei controlli di un file {#view-the-audit-history-for-a-file}
 
-In Document Security Extension for Microsoft Office 2010 e 2013, nella scheda **Document Security**, seleziona **Cronologia controlli**.
+In Document Security Extension per Microsoft® Office 2010 e 2013, sul **Sicurezza dei documenti** scheda , seleziona **Cronologia controllo**.
 
 Le pagine web di Document Security si aprono automaticamente sulla pagina Eventi, in cui vengono visualizzati gli eventi controllati relativi al file corrente.
 
-### Funzioni limitate di Microsoft Office {#microsoft-office-restricted-features}
+### Funzioni limitate di Microsoft® Office {#microsoft-office-restricted-features}
 
-Per proteggere la proprietà intellettuale, quando si apre un file protetto tramite policy alcune funzioni di Microsoft Office risultano non disponibili. L’elenco delle funzioni non disponibili dipende dalle autorizzazioni concesse all’utente corrente. All’interno di una sessione protetta, alcune funzioni risultano non disponibili solo per un file protetto, mentre altre per tutti i file. In genere, una sessione protetta inizia nel momento in cui viene aperto un file protetto tramite policy e termina con la chiusura dell’applicazione o con la scadenza della sessione.
+Per proteggere la proprietà intellettuale, alcune funzionalità di Microsoft® Office non sono disponibili quando si apre un file protetto da policy. L’elenco delle funzioni non disponibili dipende dalle autorizzazioni concesse all’utente corrente. All’interno di una sessione protetta, alcune funzioni risultano non disponibili solo per un file protetto, mentre altre per tutti i file. In genere, una sessione protetta inizia nel momento in cui viene aperto un file protetto tramite policy e termina con la chiusura dell’applicazione o con la scadenza della sessione.
 
 La maggior parte delle policy prevede la concessione di autorizzazioni complete agli autori dei file, mentre per gli altri utenti possono essere applicate funzioni limitate.
 
 Se un comando non è disponibile, il nome del comando nel menu e il pulsante correlato sulla barra degli strumenti sono disattivati.
 
 >[!NOTE]
->
->L’applicazione di una policy a un file contenente un collegamento a un file incorporato non determina l’applicazione della policy al file collegato. Document Security for Microsoft Office non estende infatti la protezione ai file collegati.
+L’applicazione di una policy a un file contenente un collegamento a un file incorporato non determina l’applicazione della policy al file collegato. Document Security per Microsoft® Office non estende la protezione ai file collegati.
 
 * I file Word, Excel e PowerPoint protetti tramite policy non possono essere aperti in una finestra del browser Internet Explorer.
-* Gli utenti ai quali è stata concessa solo l’autorizzazione di modifica non possono copiare in un file contenuti provenienti da un’altra applicazione utilizzando la funzione Appunti di Windows. Possono tuttavia copiare contenuti in un file abilitando l’opzione Appunti di Microsoft Office.
-* Quando si apre un file protetto tramite policy in Microsoft Office, il tasto Stamp non risulta più disponibile e rimane così fino a quando non viene chiusa l’applicazione o non scade la sessione.
-* Document Security for Microsoft Office non supporta WebDAV (Web-based Distributed Authoring and Versioning). Nella maggior parte dei casi, quindi, non è possibile aprire un file protetto tramite policy da una cartella WebDAV. Nei casi in cui è possibile aprire il file, non si disporrà comunque delle autorizzazioni necessarie per salvare, stampare o modificare il file o copiarne i contenuti.
+* Gli utenti ai quali è stata concessa solo l’autorizzazione di modifica non possono copiare in un file contenuti provenienti da un’altra applicazione utilizzando la funzione Appunti di Windows. Gli utenti possono copiare il contenuto in file abilitando l&#39;opzione Microsoft® Office Appunti.
+* L&#39;apertura di un file protetto da policy in Microsoft® Office rende il tasto Stampa schermo non disponibile fino alla chiusura dell&#39;applicazione o alla scadenza della sessione.
+* Document Security for Microsoft® Office non supporta l&#39;authoring e il controllo delle versioni distribuite basate su Web (WebDAV). Di solito non è possibile aprire un file protetto da criteri da una cartella WebDAV. Nei casi in cui è possibile aprire il file, non si disporrà comunque delle autorizzazioni necessarie per salvare, stampare o modificare il file o copiarne i contenuti.
 
-La protezione generale applicata ai file protetti tramite policy prevede le seguenti limitazioni:
+La protezione generale applicata ai file protetti da policy include le seguenti restrizioni:
 
 Molte funzioni comuni possono risultare limitate in Word, Excel e PowerPoint durante una sessione protetta.
 
-Se viene aperto un file protetto tramite una policy che non autorizza l’utente ad apportare modifiche, i comandi che consentono di modificare il file in qualsiasi modo non risultano disponibili. Restano disponibili soltanto i comandi che consentono di aprire o creare nuovi documenti o di modificare le preferenze dell’applicazione.
+Se è aperto un file protetto da policy che non consente all&#39;utente di apportare modifiche, i comandi che modificano il file in qualsiasi modo non sono disponibili. Sono disponibili solo i comandi che aprono o creano documenti e modificano le preferenze dell&#39;applicazione.
 
 #### Limitazioni per Word 2010 e Word 2013 {#word-2010-and-word-2013-restrictions}
 
@@ -583,7 +573,7 @@ Con l’apertura di un file protetto tramite policy in Word, il salvataggio dell
 
 **File > Flussi di lavoro** Non disponibile durante una sessione protetta.
 
-***Nota **: la possibilità di avviare un flusso di lavoro dalle versioni di Word, Excel e PowerPoint di Microsoft Office 2010 è disponibile solo nelle suite Office Professional Plus 2010, Office Enterprise 2010 e Office Ultimate 2010, nonché nelle versioni standalone di questi programmi nell’ambito di Office 2010.*
+***nota **: La possibilità di avviare un flusso di lavoro dalle versioni di sistema di Microsoft® Office 2010 di Word, Excel e PowerPoint è disponibile solo nelle suite Office Professional Plus 2010, Office Enterprise 2010 e Office Ultimate 2010, nonché nelle versioni standalone di Office 2010 di questi programmi.*
 
 **Post di blog > Pubblica** Non disponibile durante una sessione protetta.
 
@@ -655,11 +645,11 @@ Le funzioni elencate di seguito risultano limitate nelle situazioni descritte:
 
 **File > Flussi di lavoro** Non disponibile durante una sessione protetta.
 
-***Nota **: la possibilità di avviare un flusso di lavoro dalle versioni di Word, Excel e PowerPoint di Microsoft Office 2010 è disponibile solo nelle suite Office Professional Plus 2010, Office Enterprise 2010 e Office Ultimate 2010, nonché nelle versioni standalone di questi programmi nell’ambito di Office 2010.*
+***nota **: La possibilità di avviare un flusso di lavoro dalle versioni di sistema di Microsoft® Office 2010 di Word, Excel e PowerPoint è disponibile solo nelle suite Office Professional Plus 2010, Office Enterprise 2010 e Office Ultimate 2010, nonché nelle versioni standalone di Office 2010 di questi programmi.*
 
 **File > Server > Menu Attività file server** Non disponibile durante una sessione protetta.
 
-**Home > Appunti > Copia** Soggetta ai limiti dell’autorizzazione di copia. Se la copia non è consentita, il contenuto copiato non può essere incollato in nessun altro file né negli Appunti di Microsoft Office. Il contenuto può essere tuttavia copiato all’interno del file protetto se l’utente dispone dell’autorizzazione di modifica.
+**Home > Appunti > Copia** Soggetta ai limiti dell’autorizzazione di copia. Se la copia non è consentita, il contenuto copiato non può essere incollato in nessun altro file o negli Appunti di Microsoft® Office. Il contenuto può essere tuttavia copiato all’interno del file protetto se l’utente dispone dell’autorizzazione di modifica.
 
 **Home > Appunti > Incolla** Soggetta ai limiti dell’autorizzazione di modifica.
 
@@ -769,7 +759,7 @@ Le funzioni elencate di seguito risultano limitate nelle situazioni descritte:
 
 ## Utilizzo di provider di autenticazione di terze parti {#use-third-party-authentication-providers}
 
-Con AEM Forms Document Security è possibile utilizzare anche provider di autenticazione di terze parti, che consentono di aggiungere un ulteriore livello di accesso ai documenti protetti. AEM Forms Document Security supporta i seguenti flussi di lavoro di autenticazione estesa:
+Con AEM Forms Document Security è possibile utilizzare anche provider di autenticazione di terze parti, Questi provider di autenticazione consentono di aggiungere un livello di accesso aggiuntivo ai documenti protetti. AEM Forms Document Security supporta i seguenti flussi di lavoro di autenticazione estesa:
 
 * Autenticazione estesa tramite l’URL predefinito di AEM Forms
 * Autenticazione estesa tramite un URL personalizzato
@@ -779,4 +769,4 @@ Con AEM Forms Document Security è possibile utilizzare anche provider di autent
 
 ## Glossario {#glossary}
 
-Per informazioni sulla terminologia di LiveCycle e AEM Forms su JEE, consulta il [Glossario](http://www.adobe.com/go/learn_aemforms_designer_65).
+Per informazioni sui moduli di LiveCycle e AEM relativi alla terminologia JEE, consulta [Capitolo 19: Glossario](https://www.adobe.com/go/learn_aemforms_designer_65).
