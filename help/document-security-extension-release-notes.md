@@ -6,15 +6,14 @@ content-type: reference
 topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
 exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
-translation-type: ht
 source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 100%
 
 ---
 
-# AEM Document Security for Microsoft Office - Note sulla versione {#aem-document-security-for-microsoft-office-release-notes}
+# AEM Document Security for Microsoft Office - Note sulla versione{#aem-document-security-for-microsoft-office-release-notes}
 
 ## Novità di AEM Document Security for Microsoft Office {#whats-new-in-aem-document-security-for-microsoft-office}
 
