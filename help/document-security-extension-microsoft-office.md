@@ -1,6 +1,6 @@
 ---
-title: Introduzione all'estensione Document Security per Microsoft&reg AEM; Office
-description: Utilizzo dell'estensione Document Security per Microsoft&reg; Office, è possibile applicare impostazioni di riservatezza predefinite al Microsoft&reg; File di Office.
+title: Introduzione a AEM Document Security Extension for Microsoft® Office
+description: L’utilizzo di Document Security Extension for Microsoft® Office consente di applicare impostazioni di riservatezza predefinite ai file di Microsoft® Office.
 uuid: a5428c50-fae3-4823-9e6f-0f5306e7248f
 content-type: reference
 topic-tags: using
@@ -9,27 +9,27 @@ exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
 source-git-commit: f3456fa7243405a4986ac50540f8b578a6412a6c
 workflow-type: tm+mt
 source-wordcount: '1313'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
-# Introduzione a AEM Document Security Extension per Microsoft® Office{#introduction-to-aem-document-security-extension-for-microsoft-office}
+# Introduzione a AEM Document Security Extension for Microsoft® Office{#introduction-to-aem-document-security-extension-for-microsoft-office}
 
-L’estensione Adobe® Experience Manager Document Security Extension for Microsoft® Office garantisce che solo le persone autorizzate possano utilizzare file Word, Excel e PowerPoint con contenuti protetti dai diritti di proprietà intellettuale dell’autore. Utilizzando Document Security Extension per Microsoft® Office, è possibile applicare ai file impostazioni di riservatezza predefinite.
+L’estensione Adobe® Experience Manager Document Security Extension for Microsoft® Office garantisce che solo le persone autorizzate possano utilizzare file Word, Excel e PowerPoint con contenuti protetti dai diritti di proprietà intellettuale dell’autore. L’utilizzo di Document Security Extension for Microsoft® Office consente di applicare impostazioni di riservatezza predefinite ai file di Microsoft® Office.
 
-L&#39;estensione Document Security per Microsoft® Office estende il componente aggiuntivo LiveCycle Rights Management and Document Security per Adobe Experience Manager Forms per proteggere i file Word, Excel e PowerPoint e per consentire agli utenti autorizzati che hanno installato questo software di utilizzare file protetti da policy in base alle impostazioni di riservatezza stabilite nel criterio.
+L’estensione Document Security Extension for Microsoft® Office estende i componenti aggiuntivi LiveCycle Rights Management e Document Security ad Adobe Experience Manager Forms per proteggere file Word, Excel e PowerPoint e consentire agli utenti autorizzati che dispongono di questo software di utilizzare file protetti tramite criteri definiti nelle impostazioni di riservatezza.
 
 ## Come Document Security protegge la proprietà intellettuale {#how-document-security-protects-intellectual-property}
 
-Document Security garantisce che solo le persone autorizzate possano utilizzare file contenenti la proprietà intellettuale dell&#39;utente. Document Security consente infatti di proteggere i file tramite policy (o criteri) di riservatezza. Una *policy* è una raccolta di informazioni che comprendono impostazioni di riservatezza e un elenco di utenti autorizzati. Le impostazioni specificate in una policy determinano il modo in cui un destinatario può utilizzare i file a cui è associata la policy. Consentono di specificare, ad esempio, se i destinatari possono stampare o copiare il testo o salvare le modifiche.
+L’estensione Document Security garantisce che solo le persone autorizzate possano utilizzare i file protetti dai diritti di proprietà intellettuale dell’autore. Document Security consente infatti di proteggere i file tramite policy (o criteri) di riservatezza. Una *policy* è una raccolta di informazioni che comprendono impostazioni di riservatezza e un elenco di utenti autorizzati. Le impostazioni specificate in una policy determinano il modo in cui un destinatario può utilizzare i file a cui è associata la policy. Consentono di specificare, ad esempio, se i destinatari possono stampare o copiare il testo o salvare le modifiche.
 
 Sia gli amministratori che gli utenti di Document Security possono creare policy. Gli amministratori creano policy organizzative disponibili per tutti gli utenti autorizzati. Gli amministratori e i coordinatori di set di policy possono anche creare gruppi o *set di policy* disponibili per un sottoinsieme di utenti. Gli utenti possono creare policy proprie, che possono essere utilizzate solo dall’utente che le ha create. Per creare le policy, gli amministratori, i coordinatori di set di policy e gli utenti possono utilizzare le pagine web di Document Security.
 
-Sebbene siano memorizzate in Document Security, le policy vengono applicate ai file tramite Word, Excel o PowerPoint. Quando si applica una policy a un file, le informazioni contenute nel file vengono protette dalle impostazioni di riservatezza specificate nella policy. Quando distribuisci il file protetto tramite criterio, solo i destinatari autorizzati dal criterio possono accedere al contenuto del file.
+Sebbene siano memorizzate in Document Security, le policy vengono applicate ai file tramite Word, Excel o PowerPoint. Quando si applica una policy a un file, le informazioni contenute nel file vengono protette dalle impostazioni di riservatezza specificate nella policy. Quando si distribuisce un file protetto da un criterio, solo i destinatari autorizzati da tale criterio possono accedere al contenuto del file.
 
 Se si protegge un file mediante una policy, si ha un controllo costante del file, anche dopo averlo distribuito. È possibile verificare gli eventi per tenere traccia di come e quando i destinatari utilizzano il file, apportare modifiche alla policy, impedire ad altri utenti di continuare ad accedere al file e modificare la policy associata al file.
 
-## Funzionamento delle policy {#how-policies-work}
+## Funzionamento dei criteri {#how-policies-work}
 
 Le policy contengono informazioni sugli utenti autorizzati e impostazioni di riservatezza da applicare alla proprietà intellettuale. Gli utenti possono essere costituiti da qualsiasi utente riconosciuto da Document Security tramite un elenco LDAP o Active Directory collegato. Possono essere anche persone invitate a registrarsi in Document Security o per le quali l’amministratore ha creato un account.
 
@@ -41,30 +41,30 @@ Dopo aver applicato un criterio a un file, le impostazioni di riservatezza del c
 
 Se la policy consente l’accesso offline, i destinatari possono utilizzare i file protetti tramite policy anche in modalità offline (senza una connessione Internet o di rete attiva) per il periodo di tempo specificato nella policy.
 
-## Funzionamento dei file protetti tramite policy {#how-policy-protected-files-work}
+## Funzionamento dei file protetti da un criterio {#how-policy-protected-files-work}
 
-Affinché un utente possa aprire e utilizzare file Word, Excel e PowerPoint protetti da criteri, il criterio deve includere l&#39;utente come destinatario o consentire l&#39;accesso anonimo. Inoltre, l&#39;utente deve avere installato Document Security Extension per Microsoft® Office. Per assegnare un file protetto tramite policy a un utente che non dispone di Document Security Extension per Microsoft® Office, è necessario fornirgli una copia del software o informarlo su come scaricarlo dal sito web. Se necessario, il programma di installazione può essere scaricato dalla [pagina di download](https://experienceleague.adobe.com/docs/experience-manager-document-security/using/download-installer.html?lang=en).
+Per poter aprire e utilizzare file Word, Excel e PowerPoint protetti da un criterio, questo deve consentire all’utente l’accesso come destinatario o anonimo. L’utente deve aver installato Document Security Extension for Microsoft® Office. Per mettere a disposizione un file protetto da un criterio a un utente che non dispone dell’estensione Document Security Extension for Microsoft® Office, è possibile fornire una copia del software o informarlo su come scaricare il file dal proprio sito web. Se necessario, il programma di installazione può essere scaricato dalla [pagina di download](https://experienceleague.adobe.com/docs/experience-manager-document-security/using/download-installer.html?lang=it).
 
-Quando un utente tenta di aprire un file protetto da policy, l&#39;estensione Document Security per Microsoft® Office si connette a Document Security per autenticare l&#39;utente. Se Document Security è configurato per controllare le modalità di utilizzo del file, l’utente riceve una notifica con cui viene informato che l’utilizzo del file è sotto controllo. Document Security determina le autorizzazioni sui file da concedere all’utente, che potrà quindi utilizzare il file in base alle impostazioni della policy, alle seguenti condizioni:
+Quando un utente tenta di aprire un file protetto da un criterio, l’estensione Document Security Extension for Microsoft® Office si connette a Document Security per autenticare l’utente. Se Document Security è configurato per controllare le modalità di utilizzo del file, l’utente riceve una notifica con cui viene informato che l’utilizzo del file è sotto controllo. Document Security determina le autorizzazioni sui file da concedere all’utente, che potrà quindi utilizzare il file in base alle impostazioni della policy, alle seguenti condizioni:
 
 * Per il periodo di validità specificato nella policy.
 * Fino a quando un amministratore o la persona che ha applicato la policy non revoca l’accesso al file o modifica la policy.
 
-   Se la persona che ha applicato il criterio modifica il criterio o revoca l&#39;accesso al file, le autorizzazioni dell&#39;utente per il file vengono modificate o rimosse anche se l&#39;utente dispone già del file. Se il file è stato revocato, è possibile fornire all’utente un URL da cui scaricare una copia aggiornata.
+   Se la persona che ha applicato il criterio lo modifica o revoca l’accesso al file, le autorizzazioni di cui dispone l’utente per il file vengono modificate o rimosse, anche se il file è già in suo possesso. Se il file è stato revocato, è possibile fornire all’utente un URL da cui scaricare una copia aggiornata.
 
-   I file protetti da criteri possono essere aperti offline (senza una connessione a Internet o alla rete), se il criterio consente l&#39;accesso offline, durante il periodo di lease offline specificato nel criterio. Al termine di questo intervallo di tempo, l’utente deve tornare online ed effettuare la sincronizzazione con Document Security, che avvia un nuovo periodo di lease.
+   Se il criterio prevede l’accesso offline, i file protetti da tale criterio possono essere aperti offline (senza una connessione Internet o di rete) per un periodo di lease offline specificato dal criterio. Al termine di questo intervallo di tempo, l’utente deve tornare online ed effettuare la sincronizzazione con Document Security, che avvia un nuovo periodo di lease.
 
    Se la policy consente di salvare il file e l’utente salva una copia del file protetto dalla policy, questa viene automaticamente applicata e imposta al file salvato. Come per il file originale, vengono controllati e registrati anche gli eventi correlati, ad esempio i tentativi di aprire il nuovo file.
 
 ## Utilizzo di Document Security per proteggere i file {#using-document-security-to-protect-your-files}
 
-È possibile utilizzare le policy per proteggere i file in varie situazioni.
+È possibile utilizzare i criteri per proteggere i file in varie situazioni.
 
-Ad esempio, un produttore accetta offerte da fornitori che forniscono parti per un nuovo prodotto. Il fabbricante deve fornire agli offerenti informazioni proprietarie per finalizzare le loro comunicazioni. Utilizza quindi Document Security per proteggere i file con una policy che consenta ai candidati di aprire i file e visualizzarne le informazioni, senza tuttavia poter modificare, stampare o copiare i file. Chiunque non disponga delle necessarie autorizzazioni, inoltre, non potrà aprire i file.
+Ad esempio, se un produttore accetta le offerte di vari fornitori di componenti per un nuovo prodotto, il produttore deve necessariamente fornire agli offerenti le informazioni proprietarie necessarie per finalizzare le loro proposte. Utilizza quindi Document Security per proteggere i file con una policy che consenta ai candidati di aprire i file e visualizzarne le informazioni, senza tuttavia poter modificare, stampare o copiare i file. Chiunque non disponga delle necessarie autorizzazioni, inoltre, non potrà aprire i file.
 
 Dopo aver selezionato l’offerta preferita, il produttore aggiorna la policy per concedere al candidato vincitore l’autorizzazione a stampare, copiare e salvare le modifiche in locale, e per rimuovere gli altri candidati che non potranno quindi più aprire i file.
 
-Lavorando con l&#39;offerente di successo, gli ingegneri del produttore cambiano alcune delle specifiche di progettazione nei file. Per pubblicare le nuove specifiche, il produttore revoca l’accesso ad alcuni file e pubblica le nuove versioni. Quando gli ingegneri del candidato vincitore tentano di aprire il file, viene visualizzato un messaggio con cui vengono informati che l’accesso al file è stato revocato. Il messaggio contiene inoltre un URL da cui possono scaricare la nuova versione del file.
+Durante il lavoro con l’offerente selezionato, gli ingegneri del produttore modificano alcune delle specifiche di progettazione contenute nei file. Per pubblicare le nuove specifiche, il produttore revoca l’accesso ad alcuni file e pubblica le nuove versioni. Quando gli ingegneri del candidato vincitore tentano di aprire il file, viene visualizzato un messaggio con cui vengono informati che l’accesso al file è stato revocato. Il messaggio contiene inoltre un URL da cui possono scaricare la nuova versione del file.
 
 ## Informazioni aggiuntive {#additional-information}
 
@@ -78,11 +78,11 @@ Le risorse elencate in questa tabella consentono di acquisire maggiore familiari
   </tr>
   <tr>
    <td><p>Guida per gli amministratori di AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/get-started/configure-general-aem-forms-settings.html?lang=en">Guida per gli amministratori</a> o, nelle pagine di amministrazione di Document Security, fai clic sul collegamento Help, in alto a destra.</p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/get-started/configure-general-aem-forms-settings.html?lang=it">Guida per gli amministratori</a> o, nelle pagine di amministrazione di Document Security, fai clic sul collegamento Help, in alto a destra.</p> </td>
   </tr>
   <tr>
    <td><p>Aggiornamenti patch, note tecniche e informazioni aggiuntive su questa versione del prodotto</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support">Experience Cloud di supporto tecnico</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=it#support">Supporto tecnico di Experience Cloud</a></p> </td>
   </tr>
  </tbody>
 </table>
