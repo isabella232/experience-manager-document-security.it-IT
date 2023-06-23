@@ -8,7 +8,7 @@ topic-tags: using
 discoiquuid: bdc3f174-e417-4d3e-b3af-972cdcc10133
 exl-id: 98f24032-0774-47f8-bcc5-1ee37b417833
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ In caso di problemi durante l’installazione e la configurazione di AEM Documen
 
 Se hai eseguito le procedure di installazione e configurazione secondo quanto descritto nella documentazione, consulta le sezioni seguenti per verificare se sono presenti problemi simili a quelli riscontrati.
 
-### Impossibile caricare Document Security Extension per applicazioni di Microsoft Office {#document-security-extension-fails-to-load-for-microsoft-office-applications}
+### Impossibile caricare Document Security Extension per le applicazioni di Microsoft Office {#document-security-extension-fails-to-load-for-microsoft-office-applications}
 
 La proprietà LoadBehavior nel Registro di sistema di Windows specifica il funzionamento in fase di esecuzione del plug-in di protezione dei documenti. Se la proprietà LoadBehavior è impostata su 3, tutti i plug-in vengono caricati automaticamente. Prima di installare Document Security Extension for Microsoft Office, verifica che il valore della proprietà LoadBehavior sia impostato su 3.
 
