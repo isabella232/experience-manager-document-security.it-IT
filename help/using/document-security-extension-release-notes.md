@@ -7,7 +7,7 @@ topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
 exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1030'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ Apertura del documento protetto: se provi ad aprire un documento protetto in Doc
 
 Quando si apre un documento protetto da SharePoint Server, vengono disattivate tutte le autorizzazioni sul documento, indipendentemente dalle policy applicate.
 
-### Applicare una policy con filigrana dinamica a file Microsoft Excel 2013, Microsoft Excel 2016 e Microsoft Excel 2019 senza stampante installata {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
+### Applicare un criterio con filigrana dinamica a file Microsoft Excel 2013, Microsoft Excel 2016 e Microsoft Excel 2019 senza stampante installata {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
 
 Se applichi una policy con filigrana dinamica a un file Microsoft Excel 2013, Microsoft Excel 2016 o Microsoft Excel 2019 su un computer in cui non è installata alcuna stampante e quindi salvi il file, viene visualizzato il seguente errore: “Errore interno durante l’applicazione della filigrana dinamica.” Questo errore viene visualizzato anche se riapri il file protetto. La filigrana non viene applicata e non è visibile da Visualizza > Layout pagina.
 
@@ -112,7 +112,7 @@ Se è abilitata la visualizzazione protetta di Microsoft Office, Right Managemen
 
 ### Le celle di un documento Microsoft Excel contenenti un’immagine o un colore di sfondo vengono visualizzate sopra la filigrana {#cells-of-microsoft-excel-document-containing-an-image-or-background-color-appear-on-top-of-watermark}
 
-Se una cella di un documento Microsoft Excel contiene un’immagine o un colore di sfondo e al documento viene applicata una policy di filigrana dinamica, l’immagine o il colore di sfondo contenuto nella cella viene visualizzato sopra la filigrana e la copre.
+Se una cella di un documento Microsoft Excel contiene un’immagine o un colore di sfondo e al documento viene applicato un criterio di filigrana dinamica, l’immagine o il colore di sfondo contenuto nella cella viene visualizzato sopra la filigrana e la copre.
 
 ### Problema di usabilità con più certificati {#usability-issue-with-multiple-certificates}
 
