@@ -7,8 +7,8 @@ topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
-source-wordcount: '6231'
+workflow-type: ht
+source-wordcount: '6242'
 ht-degree: 100%
 
 ---
@@ -75,6 +75,7 @@ Se devi accedere alle pagine web di Document Security tramite l’autenticazione
 >Se la connessione al server non riesce, prova ad aprire le pagine web di Document Security in Internet Explorer. Se la connessione al server tramite Internet Explorer non riesce o se una finestra di dialogo visualizza un avviso relativo al certificato del server, l’estensione Document Security Extension for Microsoft® Office non è in grado di connettersi al server. Contatta l’amministratore del server per richiedere assistenza.
 
 >[!NOTE]
+>
 >Se non è possibile eseguire la connessione a Document Security, viene visualizzato il seguente messaggio: “Nome utente e password non corretti. Controlla le impostazioni di configurazione e riprova”. È possibile infatti che questo messaggio venga visualizzato anche se la connessione ha esito negativo per altri motivi. Se ti stai connettendo al server per la prima volta, verifica di aver impostato correttamente il nome del server e la porta.
 
 #### Specificare il server predefinito {#specify-the-default-server}
@@ -109,6 +110,7 @@ Per abilitare l’autenticazione estesa con l’URL di destinazione Adobe predef
    Fai clic su **[!UICONTROL Salva]**.
 
    >[!NOTE]
+   >
    >Utilizza un nome host completo nell’URL. È consigliabile utilizzare il protocollo HTTPS.
 
    La funzione di protezione dei documenti di AEM Forms è ora configurata in modo da utilizzare l’autenticazione estesa con l’URL di destinazione di AEM Forms predefinito.
@@ -133,6 +135,7 @@ Per abilitare l’autenticazione estesa con un URL di destinazione personalizzat
 1. Al file config.xml sotto il nodo SSO dopo la voce *&lt;node name=&quot;AllowedUrls&quot;>*, aggiungi le seguenti voci:
 
    >[!NOTE]
+   >
    >&lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>!!discoiqbr!!&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>!!discoiqbr!!&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>!!discoiqbr!!
 
    Per informazioni dettagliate sull’aggiornamento del file config.xml, consulta [Modifica manuale del file di configurazione per la protezione dei documenti](https://helpx.adobe.com/it/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file).
@@ -178,6 +181,7 @@ Se non disponi già di un account di Document Security, viene avviato il process
 Dopo aver registrato e attivato l’account, puoi utilizzare i file protetti tramite policy per i quali hai ricevuto l’autorizzazione all’uso tramite una policy.
 
 >[!NOTE]
+>
 >Se ricevi un file protetto tramite policy ma non disponi di un account di Document Security o se ricevi un invito a registrarti, chiedi assistenza alla persona che ti ha inviato il file.
 
 Se ricevi un invito da Document Security a registrarti tramite e-mail, puoi utilizzare l’URL contenuto nel messaggio e-mail per aprire la pagina di registrazione online. Dopo la registrazione, riceverai un secondo avviso sull’attivazione dell’account.
@@ -189,6 +193,7 @@ Se ricevi un invito da Document Security a registrarti tramite e-mail, puoi util
 1. Digita il tuo nome, la tua organizzazione e la tua password nelle caselle corrispondenti. La password può essere costituita da una qualsiasi combinazione di otto caratteri.
 
    >[!NOTE]
+   >
    >Accertati di scegliere una password facile da ricordare; non è previsto alcun metodo per recuperare una password dimenticata.
 
 1. Fai clic su **Registra**. Viene visualizzato un messaggio che ti invita a verificare nella posta se hai ricevuto un messaggio e-mail di attivazione.
@@ -327,6 +332,7 @@ Puoi applicare a un file qualsiasi policy disponibile, tra cui le policy create 
 Dopo aver applicato una policy, questa viene aggiunta all’elenco Usate di recente accessibile dal menu di AEM Document Security per facilitarne l’applicazione. Se utilizzi più di un’istanza di Document Security, nell’elenco Usate di recente vengono visualizzate solo le policy relative al server a cui sei attualmente connesso o, se non hai ancora eseguito l’accesso ad alcuna istanza di Document Security, solo le policy relative al server predefinito.
 
 >[!NOTE]
+>
 >È possibile applicare criteri solo a file di documenti Word (.doc, .docx e .docm in Microsoft® Office 2010 e 2013), a file di cartelle di lavoro Excel (.xls, .xlsx e .xlsm in Microsoft® Office 2010 e 2013) e a file di presentazioni PowerPoint (.ppt, .pptx e .pptm in Microsoft® Office 2010 e 2013). Non è possibile applicarle invece a file di modelli Word (.dot), di modelli Excel (.xlt) e di modelli struttura PowerPoint (.pot).
 
 #### Applicare una policy {#apply-a-policy}
@@ -358,6 +364,7 @@ Document Security Extension for Microsoft® Office limita alcune funzionalità d
 Se stai utilizzando un file protetto tramite policy, è possibile che alcune funzioni del prodotto non siano disponibili o non funzionino normalmente. Se inoltre hai un file non protetto aperto, la maggior parte delle funzioni è abilitata per il file non protetto, ad eccezione di quelle che consentono di importare o copiare contenuti da un file protetto tramite policy, se non disponi delle autorizzazioni per la copia o l’esportazione.
 
 >[!NOTE]
+>
 >Quando utilizzi applicazioni Office supportate da Document Security Extension, è consigliabile disabilitare la funzione Protezione esecuzione programmi di Windows. Inoltre, per garantire un avvio ottimale delle applicazioni Office nei computer in cui sono installati Document Security Extension e McAfee VirusScan con scansione all’accesso abilitata, disabilita l’opzione di protezione da overflow del buffer nella console di McAfee VirusScan.
 
 Se una funzione non è disponibile, il nome di comando nel menu e il pulsante correlato sulla barra degli strumenti non sono disponibili. In Document Security Extension for Microsoft® Office, quando passi il puntatore del mouse su un comando o un pulsante, una descrizione del comando indica che Document Security ha reso il comando non disponibile.
@@ -385,6 +392,7 @@ Puoi rimuovere la protezione tramite policy da un file protetto solo se disponi 
    Se non hai ancora fornito le informazioni di accesso a Document Security, viene visualizzata una finestra di dialogo in cui devi immettere il nome utente e la password.
 
 >[!NOTE]
+>
 >Se non riesci a rimuovere una policy da un file che hai protetto, contatta un amministratore di Document Security.
 
 ### Visualizzazione delle impostazioni di protezione {#viewing-security-settings}
@@ -404,6 +412,7 @@ Se l’amministratore ha abilitato la funzione di applicazione automatica del cr
 Se la funzione di applicazione automatica del criterio è abilitata, Document Security Extension for Microsoft® Office ti richiederà di accedere al server Document Security. Dovrai specificare il nome utente e la password per essere autenticato dal server. Se avrai specificato le credenziali di accesso corrette, il documento verrà salvato e protetto.
 
 >[!NOTE]
+>
 >Se invece non riesci ad accedere a Document Security, è possibile che il documento non venga salvato. Questo dipende dal modo in cui l’amministratore ha configurato la funzione di applicazione automatica della policy. Rivolgiti all’amministratore per sapere come vengono gestiti i documenti in questa situazione.
 
 ### Sincronizzazione per l’accesso offline {#synchronizing-for-offline-access}
@@ -414,7 +423,7 @@ Effettua le seguenti operazioni:
 
 * In Document Security Extension for Microsoft® Office 2010 e 2013, nella scheda **Document Security**, seleziona **Sincronizza offline**.
 
-   ***Nota**: il pulsante di sincronizzazione offline è disponibile anche se l’utente non dispone di autorizzazioni offline sul documento. Se si seleziona il pulsante, tuttavia, non viene eseguita alcuna operazione. *
+  ***Nota**: il pulsante di sincronizzazione offline è disponibile anche se l’utente non dispone di autorizzazioni offline sul documento. Se si seleziona il pulsante, tuttavia, non viene eseguita alcuna operazione. *
 
 ### Utilizzo delle filigrane dinamiche {#working-with-dynamic-watermarks}
 
@@ -542,6 +551,7 @@ La maggior parte delle policy prevede la concessione di autorizzazioni complete 
 Se un comando non è disponibile, il nome del comando nel menu e il pulsante correlato sulla barra degli strumenti sono disattivati.
 
 >[!NOTE]
+>
 >L’applicazione di una policy a un file contenente un collegamento a un file incorporato non determina l’applicazione della policy al file collegato. Document Security for Microsoft® Office non estende infatti la protezione ai file collegati.
 
 * I file Word, Excel e PowerPoint protetti tramite policy non possono essere aperti in una finestra del browser Internet Explorer.

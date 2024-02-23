@@ -7,8 +7,8 @@ topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
-source-wordcount: '1313'
+workflow-type: ht
+source-wordcount: '1288'
 ht-degree: 100%
 
 ---
@@ -50,11 +50,11 @@ Quando un utente tenta di aprire un file protetto da un criterio, l’estensione
 * Per il periodo di validità specificato nella policy.
 * Fino a quando un amministratore o la persona che ha applicato la policy non revoca l’accesso al file o modifica la policy.
 
-   Se la persona che ha applicato il criterio lo modifica o revoca l’accesso al file, le autorizzazioni di cui dispone l’utente per il file vengono modificate o rimosse, anche se il file è già in suo possesso. Se il file è stato revocato, è possibile fornire all’utente un URL da cui scaricare una copia aggiornata.
+  Se la persona che ha applicato il criterio lo modifica o revoca l’accesso al file, le autorizzazioni di cui dispone l’utente per il file vengono modificate o rimosse, anche se il file è già in suo possesso. Se il file è stato revocato, è possibile fornire all’utente un URL da cui scaricare una copia aggiornata.
 
-   Se il criterio prevede l’accesso offline, i file protetti da tale criterio possono essere aperti offline (senza una connessione Internet o di rete) per un periodo di lease offline specificato dal criterio. Al termine di questo intervallo di tempo, l’utente deve tornare online ed effettuare la sincronizzazione con Document Security, che avvia un nuovo periodo di lease.
+  Se il criterio prevede l’accesso offline, i file protetti da tale criterio possono essere aperti offline (senza una connessione Internet o di rete) per un periodo di lease offline specificato dal criterio. Al termine di questo intervallo di tempo, l’utente deve tornare online ed effettuare la sincronizzazione con Document Security, che avvia un nuovo periodo di lease.
 
-   Se la policy consente di salvare il file e l’utente salva una copia del file protetto dalla policy, questa viene automaticamente applicata e imposta al file salvato. Come per il file originale, vengono controllati e registrati anche gli eventi correlati, ad esempio i tentativi di aprire il nuovo file.
+  Se la policy consente di salvare il file e l’utente salva una copia del file protetto dalla policy, questa viene automaticamente applicata e imposta al file salvato. Come per il file originale, vengono controllati e registrati anche gli eventi correlati, ad esempio i tentativi di aprire il nuovo file.
 
 ## Utilizzo di Document Security per proteggere i file {#using-document-security-to-protect-your-files}
 
